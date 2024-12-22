@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+  <!-- main css -->
+  <link rel="stylesheet" href="./main.css" />
+  <title>Task Manager</title>
+</head>
+
+<body>
+  <form class="task-form">
+    <h4>To Do List</h4>
+    <div class="form-control">
+      <div class="form-name">
+        <label for="name">Item:</label>
+        <input type="text" name="name" class="task-input-name" placeholder="e.g. Go to the gym" />
+      </div>
+      <div class="form-description">
+        <label for="description">Description:</label>
+        <input type="text" name="description" class="task-input-desc" placeholder="e.g. Do squats, pushups" />
+      </div>
+      <div class="form-duedate">
+        <label for="duedate">Due Date:</label>
+        <input type="date" name="duedate" class="task-input-date" />
+      </div>
+      <button type="submit" class="btn submit-btn">submit</button>
+    </div>
+    <div class="form-alert"></div>
+  </form>
+  <section class="tasks-container">
+    <div class="tasks"></div>
+  </section>
+  <!-- axios -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+  <script src="./browser-app.js"></script>
+</body>
+
+</html>
