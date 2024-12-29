@@ -348,11 +348,11 @@ form> :last-child {
 }
 
 .task-duetoday {
-  background: var(--red-dark);
+  background: #D2122E;
 }
 
 .task-dueinthreedays {
-  background: orangered;
+  background: coral;
 }
 
 .single-task:hover {
